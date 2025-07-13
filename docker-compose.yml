@@ -1,11 +1,1 @@
-services:
-  proxy:
-    # Gost is a lightweight, all-in-one proxy written in Go
-    image: ginuerzh/gost
-    container_name: fast-proxy
-    restart: unless-stopped
-    # The command now sets up both proxies with your username and password
-    command: -L "socks5://bobby:13771210@:1080" -L "http://bobby:13771210@:3128"
-    ports:
-      - "3128:3128" # HTTP Port
-      - "1080:1080" # SOCKS5 Port
+
