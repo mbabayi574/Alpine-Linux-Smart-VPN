@@ -1,0 +1,9 @@
+services:
+  proxy:
+    image: ginuerzh/gost
+    container_name: stable-proxy
+    restart: unless-stopped
+    command: -L "ss2022://2022-blake3-aes-128-gcm:13771210@:14433"
+    ports:
+      - "14433:14433/tcp"
+      - "14433:14433/udp"
