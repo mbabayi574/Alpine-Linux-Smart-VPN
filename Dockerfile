@@ -1,6 +1,6 @@
-# Use the official gost image as the base
-FROM ginuerzh/gost:latest
+FROM ginuerzh/gost
 
-EXPOSE 14433/tcp
-EXPOSE 14433/udp
-CMD ["-L", "ss2022://2022-blake3-aes-128-gcm:13771210@:14433"]
+EXPOSE 1080
+EXPOSE 3128
+
+CMD ["-L", "socks5://bobby:13771210@:1080", "-L", "http://bobby:13771210@:3128"]
