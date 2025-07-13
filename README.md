@@ -1,2 +1,3 @@
 # Alpine-Linux-Smart-VPN
-A Containerized Minimal Fast HTTPS Proxy Server
+
+A Containerized Very Minimal and Fast HTTPS Proxy ( VPN ) Server
